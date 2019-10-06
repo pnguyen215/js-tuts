@@ -1,0 +1,1 @@
+we use max-age attribute to delete a cookie by providing zero or negative number
