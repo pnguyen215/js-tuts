@@ -10,7 +10,7 @@
  */
 
 // example 1
-var jsonString = '{"name": "phuocnguyen","isStudent": true,"age": 23}'
+var jsonString = '{"name": "phuocnguyen","isStudent": true,"age": 23}';
 
 var student = JSON.parse(jsonString);
 

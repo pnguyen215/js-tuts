@@ -1,0 +1,3 @@
+function clearItem(){
+	localStorage.clear();
+}

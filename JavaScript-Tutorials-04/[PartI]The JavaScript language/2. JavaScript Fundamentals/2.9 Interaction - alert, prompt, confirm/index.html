@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getMsgUsingAlert() {
+            alert("Alert - shows a message.")
+        }
+
+        function getMsgUsingPrompt() {
+            let question = prompt("how old are you? ", "");
+            alert(`I am ${question} year old!`);
+            alert(
+                "Prompt -shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null "
+            );
+        }
+
+        function getMsgUsingConfirm() {
+            let question = confirm("Are you lazy? ");
+            if (!question) {
+                alert("You are good boy/girl!");
+            } else {
+                alert("You are bad!!!");
+            }
+        }
+
+        function getMsg() {
+            alert(
+                "All these methods are modal: they pause script execution and don’t allow the visitor to interact with the rest of the page until the window has been dismissed."
+            );
+            alert("There are two limitations shared by all the methods above:");
+            alert(
+                "1. The exact location of the modal window is determined by the browser. Usually, it’s in the center."
+            );
+
+            alert("2. The exact look of the window also depends on the browser. We can’t modify it");
+            alert(
+                "That is the price for simplicity. There are other ways to show nicer windows and richer interaction with the visitor, but if “bells and whistles” do not matter much, these methods work just fine."
+            );
+        }
+    </script>
+</body>
+<form action="">
+    <button onclick="getMsgUsingAlert()">Click Alert</button>
+    <button onclick="getMsgUsingPrompt()">Click Prompt</button>
+    <button onclick="getMsgUsingConfirm()">Click Confirm</button>
+    <button onclick="getMsg()">Click Get More Information</button>
+</form>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkYourYear() {
+            let question = prompt("When were you born? ", ''); // get year 
+            let date = new Date();
+            if (date.getFullYear() > question) {
+                let age = date.getUTCFullYear() - question;
+                alert(`You are ${age} year old!`);
+            } else {
+                alert("You are not here on the Earth! Please, get out of there!");
+            }
+
+
+        }
+
+        function checkYourMonth() {
+            let date = new Date();
+            let question = prompt("When were you born? ", "");
+            let answer = (((date.getUTCFullYear()) - question) > 18) ? "You are adult!" : "You are still a child!";
+            alert(answer);
+        }
+    </script>
+</body>
+<form action="">
+
+    <button onclick="checkYourYear()">
+        Click Check Your Age
+    </button>
+    <button onclick="checkYourMonth()">
+
+        Click Age
+    </button>
+</form>
+
+</html>

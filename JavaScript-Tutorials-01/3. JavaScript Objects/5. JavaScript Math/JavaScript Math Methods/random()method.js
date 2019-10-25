@@ -11,10 +11,14 @@ function numberRandom(num1, num2) {
 }
 console.log(numberRandom(3, 8))
 
+
+
+
+
 // to find out the random integer number between two values.
 function getNumberRandom(min, max) {
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random() * (max - min)) + min
+    min = Math.ceil(min) 
+    max = Math.floor(max) 
+    return Math.floor(Math.random() * (max - min)) + min;
 }
-console.log(getNumberRandom(2, 10))
+console.log(getNumberRandom(1, 10))

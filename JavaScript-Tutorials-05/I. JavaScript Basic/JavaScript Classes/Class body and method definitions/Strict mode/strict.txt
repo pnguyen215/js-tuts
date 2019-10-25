@@ -1,0 +1,1 @@
+The code inside a class is always in strict mode, this helps to write error-free code, by throwing errors, on mis typings, or syntactical errors done while writing code, or even removing some code by mistake, which is referenced from somewhere else.
